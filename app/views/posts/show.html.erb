@@ -1,0 +1,15 @@
+<div>
+  <span><%= @presenter.post.title %></span>
+  <% @presenter.comments.each do |comment| %>
+    <span><%= comment.text %></span>
+  <% end %>
+
+  <form accept-charset="UTF-8" action="/comments" method="post">
+    <input name="utf8" type="hidden" value="&#x2713;" />
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= hidden_field_tag :post_id, @presenter.post.db_id %>
+    <%= label_tag(:text, "Comment:") %>
+    <%= text_field_tag(:text) %>
+    <input type="submit" value="Submit" />
+  </form>
+<div>

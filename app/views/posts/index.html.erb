@@ -1,0 +1,11 @@
+<div>
+  <form accept-charset="UTF-8" action="/posts" method="post">
+    <input name="utf8" type="hidden" value="&#x2713;" />
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= label_tag(:title, "New Post:") %>
+    <%= text_field_tag(:title) %>
+    <input type="submit" value="Submit" />
+  </form>
+
+  You just need to visit urls posts/1, posts/2, ... by hand currently
+</div>
