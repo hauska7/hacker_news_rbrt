@@ -12,14 +12,21 @@ The most important directories would be `app/use_cases` and `app/domain`. Also `
 ## Setup
 
   $ docker-compose build
+
   $ docker-compose run --rm web bash
+
   $ rake db:create
+
   $ rake db:schema:load
+
   $ exit
+
   $ docker-compose run --rm --service-ports web
+
   Browse to localhost:3000
 
 ## How to run the test suite
 
   $ docker-compose run --rm web bash
+
   $ rspec spec/use_cases
