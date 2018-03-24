@@ -1,8 +1,6 @@
-# README
+## Description
 
 This is an example app for https://github.com/hauska7/rbrt .
-
-## Description
 
 Rbrt is a business logic framework for ruby it makes it easier to write business logic then using pure ruby but is still so lightweight that your tests will run blazingly fast.
 
